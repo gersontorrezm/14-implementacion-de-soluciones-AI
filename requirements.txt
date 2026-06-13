@@ -1,0 +1,16 @@
+# Caso #8 – Recomendación de Productos Personalizados (Olist)
+# Dependencias del pipeline (Sprints 1-3)
+pandas==2.1.3
+numpy>=1.24,<2.0
+scipy==1.11.3
+scikit-learn==1.6.1
+joblib==1.4.2
+optuna==4.9.0
+streamlit==1.58.0
+plotly==6.0.1
+matplotlib>=3.7
+seaborn>=0.12
+# Notebook
+nbformat>=5.10
+nbclient>=0.10
+ipykernel>=6.15
