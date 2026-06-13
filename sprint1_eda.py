@@ -11,6 +11,9 @@ import warnings
 warnings.filterwarnings("ignore")
 
 DATA_DIR = Path(__file__).parent
+# Los CSV pueden estar en la raíz del proyecto o en la subcarpeta data/
+if not (DATA_DIR / "olist_orders_dataset.csv").exists() and (DATA_DIR / "data" / "olist_orders_dataset.csv").exists():
+    DATA_DIR = DATA_DIR / "data"
 
 
 # ─────────────────────────────────────────────

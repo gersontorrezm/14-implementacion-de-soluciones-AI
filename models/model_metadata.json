@@ -1,0 +1,39 @@
+{
+  "model_version": "3.0",
+  "caso": "#8 Recomendación de Productos Personalizados",
+  "target_final": "category_en",
+  "algoritmo": "hybrid",
+  "hiperparametros": {
+    "method": "hybrid",
+    "cf_method": "copurchase",
+    "n_components": 15,
+    "n_iter": 10,
+    "alpha": 1.0,
+    "min_support": 10
+  },
+  "metricas_definitivas": {
+    "leave_one_out": {
+      "Precision@10": 0.0691,
+      "Recall@10": 0.6907,
+      "F1@10": 0.1256,
+      "HitRate@10": 0.6907,
+      "Coverage": 0.3014,
+      "n_users": 2105
+    },
+    "backtest_temporal": {
+      "Precision@10": 0.063,
+      "Recall@10": 0.6074,
+      "n_users": 430,
+      "periodo": "Backtest (2018-04 → 2018-10)"
+    },
+    "cv_best": {
+      "Recall@10_mean": 0.6689,
+      "Precision@10_mean": 0.0669
+    },
+    "tuning_winner": "GridSearchCV"
+  },
+  "n_categorias": 73,
+  "n_usuarios_train": 89998,
+  "exportado_en": "2026-06-13T09:23:56",
+  "artefacto": "recommender_final.pkl"
+}
